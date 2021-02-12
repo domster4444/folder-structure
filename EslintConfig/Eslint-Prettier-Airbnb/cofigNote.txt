@@ -1,0 +1,75 @@
+Install eslint , prettier extensions . 
+npm init -y 
+npm i -D eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
+
+
+npx install-peerdeps --dev eslint-config-airbnb
+
+
+Inside .prettierrc
+{
+  "singleQuote": true
+}
+
+
+
+Inside .eslintrc.json
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {}
+}
+
+
+
+//-----------------------------Adding to a project??
+just copy dev dependencies modules of package .json
+"devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^2.2.1"
+  },
+
+
+  inside the folder where you want to setup 
+ use command : npm init -y
+ edit the package.json file with by adding below licence,
+ "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "prettier": "^2.2.1"
+  },
+
+
+
+  then hit "npm install"
+
+  all good 

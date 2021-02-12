@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:node/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error", //?(fix) : In live time in "PROBLEMS" section of terminal it wont show u unused var warning until saving .
+
+    "no-unused-vars": 1, //?   0=>In unused variable case : 0=>ignore 1=>warning msg  2=>error msg
+    "no-console": "off", //? Ignores unexpected console.log
+
+    "no-process-exit": "off", //? no error for process.exit in nodejs
+    "object-shorthand": "off", //serch in goodle
+    "class-methods-use-this": "warn"
+  }
+}

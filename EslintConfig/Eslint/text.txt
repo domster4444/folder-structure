@@ -1,0 +1,19 @@
+npm init -y
+touch code.js
+npx install-peerdeps --dev eslint-config-wesbos
+CREATE_A_ .eslintrc file inside root folder
+
+INSIDE_.eslintrc file :-
+{
+  "extends": ["wesbos"]
+}
+
+
+go to package .json file and inside "scripts":{
+
+
+"lint": "eslint .",
+"lint:fix": "eslint . --fix"
+
+}
+

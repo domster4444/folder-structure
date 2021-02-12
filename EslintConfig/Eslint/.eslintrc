@@ -1,0 +1,11 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    // ----------------Unused variable-------------------------
+    //? "no-unused-vars": 2
+    /* 0 => no error for unused variable 
+    1 => warning for unused variable 
+    2 => error for unused variables */
+    // -----------------------------------------
+  }
+}
